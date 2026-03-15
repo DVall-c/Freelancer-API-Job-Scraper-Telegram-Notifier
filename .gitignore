@@ -1,0 +1,16 @@
+
+settings.py
+.env
+env
+env/
+jobs.txt
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.vscode/
+.idea/
+.DS_Store
