@@ -42,11 +42,26 @@ Before you begin, ensure you have the following:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/DVall-c/Freelancer-API-Job-Scraper-Telegram-Notifier.git](https://github.com/DVall-c/Freelancer-API-Job-Scraper-Telegram-Notifier.git)
-   cd Freelancer-API-Job-Scraper-Telegram-Notifier```
+   cd Freelancer-API-Job-Scraper-Telegram-Notifier
 
 2. **Install requirements.txt:**
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
+
+3. **Configure Your Secrets:**
+Create a file named settings.py inside the core/ folder (core/settings.py).
+Add your credentials in the exact format below. 
+DO NOT commit this file to GitHub unless you want strangers hijacking your Telegram bot.
+   ```bash
+   # core/settings.py
+   BOT_TOKEN = "your_telegram_bot_token_here"
+   CHAT_ID = "your_personal_chat_id_here"
+
+   # Application Configuration
+   FILE_PATH = "jobs.txt"  # Path to your state-of-the-art text file database
+   INTERVAL = 30           # Polling interval in seconds
+
+4. **Run main.py**
 
 
 
